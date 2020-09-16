@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f6f6f6;
+    font-family: 'Open Sans', sans-serif;
+    color: #8d8c8c;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #58bcb3;
+}
+
+.portal-name{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color:  #8d8c8c;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 1px 2px 15px #e5e5e5;
+    -webkit-box-shadow: 1px 2px 15px #e5e5e5;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .btn{
+    margin-bottom: 0;
+    padding: 15px 23px;
+    font-size: 13px;
+}
+
+.navbar-brand{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #58bcb3;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.card{
+    margin-bottom: 1rem;
+    box-shadow: 1px 2px 15px #e5e5e5;
+    -webkit-box-shadow: 1px 2px 15px #e5e5e5;
+    position: relative;
+    background-color: #fff;
+}
+
+.card-img-top{
+    width: 100%;
+}
+
+.card-body{
+    padding: 23px 30px 12px;
+}
+
+.card-title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #000;
+    line-height: 1.3em;
+    margin-bottom: .75rem;
+    margin-top: 0;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.card-text{
+    margin-bottom:.75rem ;
+}
+
+.btn{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 9px 23px;
+    background-color: #58bcb3;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #49968f;
+    color: white;
+}
+
+.pub-date{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.columns {
+    column-width: 320px;
+    column-gap: 15px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+   
+.columns .card {
+    transition: border-color .15s ease-out;
+    display: inline-block;
+}
+   
+@media (min-width: 992px){
+    .container {
+        max-width: 1100px;
+    }
+}
+
+@media screen and (max-width: 750px) { 
+    .columns { column-gap: 0px; }
+    .columns .card { width: 100%; }
+}
